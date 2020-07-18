@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1200px) {
     header {
         width: 100%;
-        font-size: 2em;
+        font-size: 5em;
         background-color: var(--hover);
     }
     .nav-bar-container {
@@ -19,7 +19,7 @@
     }
     .first-name {
         width: 50%;
-        padding-right: 0.5em;
+        padding-right: 0.2em;
         color: black;
         display: flex;
         justify-content: flex-end;
@@ -27,7 +27,7 @@
     }
     .last-name {
         width: 50%;
-        padding-left: 0.5em;
+        padding-left: 0.2em;
         color: black;
         display: flex;
         justify-content: left;
@@ -52,13 +52,14 @@
         align-items: center;
     }
     .ham-menu-option {
-        font-size: 0.6em;
+        font-size: 0.8em;
         width: 100%;
-        height: 50px;
+        height: auto;
         color: black;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0.2em;
     }
     #my-links {
         width: 100%;
@@ -70,6 +71,22 @@
     }
     .selected {
         background-color: var(--selected-option);
+    }
+    a.major-section, a.link {
+        font-size: 5em;
+    }
+    a.major-section:hover {
+        color: black;
+        font-size: 5em;
+    }
+    a.major-section:focus {
+        color: black;
+        font-size: 5em;
+    }
+    a.link:hover {
+        color: black;
+        font-size: 5em;
+        font-weight: bolder;
     }
     .major-section {
         height: 20%;
@@ -137,7 +154,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0.5em;
     }
     .github::before {
         background: var(--github);
@@ -196,8 +213,8 @@
         width: 100%;
         border-radius: 15px;
         box-shadow: 7px 7px 7px var(--selected-option);
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5em;
+        margin-bottom: 5em;
         background-color: white;
         color: black;
     }
@@ -217,32 +234,40 @@
         object-fit: cover;
     }
     .proj-name {
-        font-size: 1.5em;
+        font-size: 5em;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         height: 20%;
+        letter-spacing: 0.2em;
+        padding-bottom: 0.5em;
     }
     .proj-description {
         margin-top: 15px;
         height: 50%;
         overflow-y: scroll;
+        font-size: 2.5em;
     }
     .proj-description::-webkit-scrollbar {
         display: none;
+    }
+    .proj-features {
+        margin: 5px;
+        font-size: 0.75em;
     }
     .proj-links-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 30%;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
     .proj-link {
-        font-size: 1em;
+        font-size: 3em;
         padding: 0.5em;
         text-align: center;
         border-radius: 5px;
         margin: 15px;
-        width: 150px;
     }
     .github-link {
         border: 1px solid var(--github);
@@ -276,12 +301,12 @@
         display: none;
     }
     .proj-tag {
-        font-size: 1em;
+        font-size: 2em;
         padding: 0.5em;
         text-align: center;
         border-radius: 5px;
         margin: 10px 10px 20px 10px;
-        width: 100px;
+        min-width: 200px;
     }
     .proj-tag:hover {
         transform: rotate(-2.5deg);
@@ -307,6 +332,7 @@
         border-radius: 20px;
         box-shadow: 7px 7px 7px var(--selected-option);
         display: block;
+        font-size: 2em;
     }
     .about-me-text-container {
         width: 100%;
@@ -341,7 +367,7 @@
     }
     .my-interests-container {
         width: 100%;
-        height: 100px;
+        height: auto;
         overflow: scroll;
         border-radius: 0px 0px 20px 20px;
         display: flex;
@@ -350,11 +376,10 @@
         display: none;
     }
     .interest {
-        width: 23%;
-        height: 100%;
-        font-size: 1.2em;
+        width: auto;
+        font-size: 2em;
         text-align: center;
-        padding: 45px;
+        padding: 1em;
     }
     .end-note {
         font-size: 0.7em;
@@ -372,26 +397,29 @@
         margin-bottom: 100px;
     }
     .contact-title-container {
-        font-size: 2.5em;
+        font-size: 5em;
         width: 100%;
         padding: 25px;
     }
     .contact-form-container {
-        font-size: 2.5em;
+        font-size: 3em;
         width: 100%;
     }
     .contact-form {
         user-select: auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     .contact-info-form-container {
         width: 100%;
         padding-left: 30px;
         padding-right: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 2em;
+        margin-top: 2em;
     }
     .contact-info-container {
         width: 100%;
-        font-size: 1em;
+        font-size: 3em;
     }
     input:focus {
         outline: 0px;
@@ -403,11 +431,12 @@
         border-left: 0;
         border-right: 0;
         width: 60%;
-        height: 30px;
+        height: auto;
         background-color: transparent;
         text-align: left;
-        font-size: 1.5vh;
-        padding-left: 10px;
+        font-size: 1em;
+        padding: 0.5em;
+        margin-top: 1em;
     }
     textarea:focus {
         outline: 0px;
@@ -415,13 +444,13 @@
     }
     textarea {
         border: 2px solid #424242;
-        margin-top: 25px;
-        padding: 10px;
+        margin-top: 1em;
+        padding: 0.5em;
         width: 90%;
-        height: 100px;
+        height: auto;
         background-color: transparent;
         text-align: left;
-        font-size: 1.5vh;
+        font-size: 1em;
     }
     .submit-btn {
         border: 2px solid #424242;
@@ -443,8 +472,7 @@
         box-shadow: 7px 7px 7px var(--selected-option);
     }
     .social-links-container {
-        height: 150px;
-        margin-top: 10px;
+        margin-top: 2em;
     }
     .social-link-box-top {
         width: 100%;
@@ -464,6 +492,8 @@
         justify-content: center;
         align-items: center;
         margin: 5px;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .linkedin-link {
         background-color: powderblue;
